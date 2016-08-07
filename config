@@ -153,7 +153,7 @@ bindsym $mod+r mode "resize"
 # finds out, if available)
 bar {
         status_command i3status -c ~/.i3status.conf
-
+	position top
 
 colors {
 		background $bg-color
@@ -167,7 +167,7 @@ colors {
 }
 
 #WALLPAPER
-exec_always feh --bg-scale /home/connor/Pictures/wallpaper.jpg
+exec_always feh --bg-center /home/connor/Pictures/wallpaper.jpg
 
 
 #colors
@@ -197,9 +197,5 @@ bindsym Print exec screenshot
 #compton
 exec compton
  
-#window names
-  set $workspace1 "1: Internet"
-  set $workspace2 "2: Work"
-  set $workspace3 "3: Music"
-  set $workspace4 "4: Downloads"
-
+#window borders
+new_windows 1pixel
